@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    padding-right: 50px;
+}
+.container {
+    width: 80%;
+    margin:auto;
+}
+
+#plot {
+    height: 800px;
+    border-bottom: 3px black solid;
+    /* position: relative; */
+} 
+
+.blocks {
+    display: inline-block;
+    height: 100px;
+    width: 10px;
+    border: 1px blue solid;
+    background-color: aqua;
+    margin: 0;
+    padding-bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+    /* left:10; */
+    /* vertical-align: bottom; */
+}
