@@ -9,21 +9,34 @@
 </head>
 <body>
     
-    <nav>
-            <label> Num elements </label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
-            <a href=""> Selection Sort</a>
-            <a href=""> Bubble Sort</a>
-            <a href=""> Insertion Sort</a>
-            <a href=""> Quick Sort</a>
-            <a href=""> Merge Sort</a>
-    </nav> 
+    <nav>Sorting Algorithm Visualizer</nav>
+    <div class="sidebar">
+        <div class="all-section">
+            <div class="section">
+                <div class="section-header"> Parameters </div>
+                <label> Num elements: </label>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
+                <label id="anim-speed-label"> Animation Speed: </label>
+                <input type="range" min="1" max="100" value="50" class="slider" id="speedRange" />
+                <a id="reinit" class="hover-class"> Re-Initialize </a>
 
-    <div class="container">
-        
-        <div id="plot">
-            <!-- <div class="blocks"></div><div class="blocks"></div><div class="blocks"></div> -->
+            </div>
+            
+            <div class="divider"> </div>
+
+            <div class="section">
+                <div class="section-header"> Sorts: </div>
+                <a id="selection" class="hover-class"> Selection Sort </a>
+                <a id="bubble" class="hover-class"> Bubble Sort </a>
+                <a id="insertion" class="hover-class"> Insertion Sort </a>
+                <a id="quick" class="hover-class"> Quick Sort </a>
+                <a id="merge" class="hover-class"> Merge Sort </a>
+            </div>
         </div>
+    </div>
+    <div class="container">
+
+        <div id="plot"></div>
     </div>
 
     <script src="js/script.js"></script>
